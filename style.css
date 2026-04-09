@@ -62,17 +62,9 @@ a:hover { text-decoration: underline; }
   padding: 0 24px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 52px;
 }
-
-.nav__name {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--text-bright);
-  text-decoration: none;
-}
-.nav__name:hover { text-decoration: none; }
 
 .nav__menu {
   display: flex;
@@ -259,6 +251,22 @@ a:hover { text-decoration: underline; }
   line-height: 1.55;
 }
 
+.card__sub {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-top: 4px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.card__sub a { color: var(--link); }
+
+.card__sub--divider {
+  padding-bottom: 10px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
 .card__thesis {
   margin-top: 10px;
   padding-top: 10px;
@@ -306,6 +314,22 @@ a:hover { text-decoration: underline; }
 .card__links a { font-size: 0.8rem; }
 
 .dim { color: var(--text-dim); font-size: 0.8rem; }
+
+/* ---- Experience ---- */
+
+.experience__text p {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.experience__text p:last-child { margin-bottom: 0; }
+
+.experience__text strong {
+  color: var(--text-bright);
+  font-weight: 600;
+}
 
 /* ---- Expertise ---- */
 
@@ -392,6 +416,14 @@ a:hover { text-decoration: underline; }
   font-size: 0.9rem;
   color: var(--text);
   line-height: 1.65;
+}
+
+.projects__more {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  font-style: italic;
+  padding-top: 20px;
+  text-align: center;
 }
 
 /* ---- Open Source ---- */
