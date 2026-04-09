@@ -165,8 +165,8 @@ a:hover { text-decoration-color: var(--link); }
 }
 
 .header__photo {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--border);
@@ -179,10 +179,14 @@ a:hover { text-decoration-color: var(--link); }
     flex-direction: column;
     text-align: center;
   }
+  .header__photo {
+    width: 140px;
+    height: 140px;
+  }
 }
 
 .header h1 {
-  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 800;
   color: var(--text-bright);
   letter-spacing: -0.04em;
