@@ -1,337 +1,660 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ренат Губаев</title>
-  <meta name="description" content="Ренат Губаев — fullstack-разработчик, blockchain-архитектор. МФТИ, РАНХиГС, публикации IEEE, open-source библиотеки.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <nav class="nav" id="nav">
-    <div class="nav__container">
-      <button class="nav__toggle" id="navToggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav__menu" id="navMenu">
-        <li><a href="#academic">Образование</a></li>
-        <li><a href="#expertise">Экспертиза</a></li>
-        <li><a href="#experience">Опыт</a></li>
-        <li><a href="#projects">Проекты</a></li>
-        <li><a href="#opensource">Open source</a></li>
-        <li><a href="#contact">Контакты</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="header" id="top">
-    <div class="header__bg"></div>
-    <div class="container">
-      <div class="header__content">
-        <h1>Ренат Губаев</h1>
-        <p class="header__role">Разработчик, blockchain-архитектор</p>
-        <p class="header__summary">Проектирую и реализую enterprise-системы на стыке blockchain, искусственного интеллекта и финансовых технологий. Автор экосистемы open-source библиотек, соавтор научных публикаций IEEE.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ренат Губаев</title>
+    <meta
+      name="description"
+      content="Ренат Губаев — fullstack-разработчик, blockchain-архитектор. МФТИ, РАНХиГС, публикации IEEE, open-source библиотеки."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav__container">
+        <a href="#top" class="nav__name">РГ</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#academic">Образование</a></li>
+          <li><a href="#expertise">Экспертиза</a></li>
+          <li><a href="#experience">Опыт</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
       </div>
-    </div>
-  </header>
+    </nav>
 
-  <!-- Education & Publications -->
-  <section class="section" id="academic">
-    <div class="container">
-      <h2 class="section__title">Образование и публикации</h2>
-
-      <div class="two-col">
-        <div>
-          <h3 class="label">Образование</h3>
-
-          <div class="card">
-            <div class="card__accent"></div>
-            <div class="card__body">
-              <div class="card__top">
-                <span class="card__year">2010</span>
-                <span class="card__degree">Магистр</span>
-              </div>
-              <h4>МФТИ &middot; <a href="https://ru.wikipedia.org/wiki/Московский_физико-технический_институт#факультет_физической_и_квантовой_электроники_(ФФКЭ)" target="_blank" rel="noopener">Физика и прикладная математика</a></h4>
-              <p class="card__sub card__sub--divider">Московский физико-технический институт</p>
-              <p class="card__sub">Факультет физической и квантовой электроники, кафедра высокопроизводительных вычислительных систем</p>
-              <p class="card__thesis"><span class="card__thesis-label">Дипломная работа:</span> Системы команд масштабируемых векторных процессоров</p>
-              <p class="card__thesis"><span class="card__thesis-label">Преподавание:</span> Лекции по устройству смарт-контрактов Ethereum в рамках <a href="https://blockchain.mipt.ru" target="_blank" rel="noopener">магистерской программы МФТИ по технологиям блокчейна</a></p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card__accent"></div>
-            <div class="card__body">
-              <div class="card__top">
-                <span class="card__year">2012</span>
-                <span class="card__degree">Магистр</span>
-              </div>
-              <h4>РАНХиГС &middot; <a href="https://mbacio.ru/msc-it" target="_blank" rel="noopener">Информационный менеджмент</a></h4>
-              <p class="card__sub card__sub--divider">Российская академия народного хозяйства и государственной службы при Президенте РФ</p>
-              <p class="card__sub"><a href="https://mbacio.ru" target="_blank" rel="noopener">Школа IT-менеджмента</a>, подготовка руководителей в сфере IT</p>
-              <p class="card__thesis"><span class="card__thesis-label">Выпускная работа:</span> Социальная сеть для видеообщения Vichatter&nbsp;&mdash; реализованный продукт с аудиторией более 3&nbsp;млн пользователей, до 500&nbsp;тыс. посещений в день</p>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h3 class="label">Научные публикации</h3>
-
-          <div class="card">
-            <div class="card__accent card__accent--pub"></div>
-            <div class="card__body">
-              <div class="card__top">
-                <span class="card__venue">IEEE ICDCSW 2025</span>
-                <span class="card__location">Глазго, Великобритания</span>
-              </div>
-              <h4>Integrating Cvartel with Hyperledger Fabric for Enhanced Biometric Authentication</h4>
-              <p class="card__authors">G.&nbsp;Ivanov, Y.&nbsp;Madhwal, <strong>R.&nbsp;Gubaev</strong>, A.&nbsp;Belenov</p>
-              <p class="card__doi">DOI: 10.1109/ICDCSW63273.2025.00064</p>
-              <a href="https://ieeexplore.ieee.org/document/11262628" class="card__link" target="_blank" rel="noopener">IEEE Xplore &rarr;</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card__accent card__accent--pub"></div>
-            <div class="card__body">
-              <div class="card__top">
-                <span class="card__venue">IEEE ICBC 2021</span>
-                <span class="card__location">Сидней, Австралия</span>
-              </div>
-              <h4>Karma Blockchain Based Charity Foundation Platform</h4>
-              <p class="card__authors"><strong>R.&nbsp;Gubaev</strong>, A.&nbsp;Peresichansky, A.&nbsp;Belenov, A.&nbsp;Barger <span class="dim">(IBM, Hyperledger TSC)</span></p>
-              <p class="card__doi">DOI: 10.1109/ICBC51069.2021.9461072</p>
-              <div class="card__links">
-                <a href="https://ieeexplore.ieee.org/document/9461072/" target="_blank" rel="noopener">IEEE Xplore</a>
-                <a href="https://research.ibm.com/publications/karma-blockchain-based-charity-foundation-platform" target="_blank" rel="noopener">IBM Research</a>
-                <a href="https://www.researchgate.net/publication/352724815" target="_blank" rel="noopener">ResearchGate</a>
-              </div>
-            </div>
-          </div>
-
-          <h3 class="label label--spaced">Open-source исследования</h3>
-
-          <div class="card card--subtle">
-            <div class="card__accent card__accent--oss"></div>
-            <div class="card__body">
-              <div class="card__top">
-                <span class="card__venue">Hyperledger Labs</span>
-                <span class="card__location">Linux Foundation</span>
-              </div>
-              <h4>Karma Charity Platform</h4>
-              <p>Initial Committer. Проект принят в Hyperledger Labs при спонсорстве члена Hyperledger Technical Steering Committee (IBM).</p>
-              <a href="https://github.com/hyperledger-labs/karma-charity-platform" class="card__link" target="_blank" rel="noopener">GitHub &rarr;</a>
-            </div>
-          </div>
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="header__bg"></div>
+      <div class="container">
+        <div class="header__content">
+          <h1>Ренат Губаев</h1>
+          <p class="header__role">
+            20+ лет в разработке: от коммуникационных платформ до blockchain и
+            AI
+          </p>
+          <p class="header__summary">
+            Проектирую и реализую enterprise-системы на стыке blockchain,
+            искусственного интеллекта и финансовых технологий. Автор экосистемы
+            open-source библиотек, соавтор научных публикаций IEEE.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Expertise -->
-  <section class="section section--alt" id="expertise">
-    <div class="container">
-      <h2 class="section__title">Области экспертизы</h2>
+    <!-- Education & Publications -->
+    <section class="section" id="academic">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <h3 class="label">Базовое образование</h3>
 
-      <div class="expertise__grid">
-
-        <div class="exp-card">
-          <h3>Blockchain-архитектура</h3>
-          <p>Проектирование систем на Hyperledger Fabric и Ethereum: смарт-контракты, токеномика, кросс-чейн взаимодействие. Автор ORM-фреймворка для chaincode и библиотеки управления токенами. Опыт с Polymath Security Tokens (ST-20), ERC-20/ERC-721, DeFi-механиками.</p>
-        </div>
-
-        <div class="exp-card">
-          <h3>Enterprise-платформы</h3>
-          <p>Полный цикл разработки сложных бизнес-систем. Мультитенантность, ресурсная авторизация через Keycloak, двойное хранение состояния (SQL&nbsp;+&nbsp;blockchain), Command/Event архитектура, WebSocket real-time. Платформа цифровых финансовых активов из 12+ компонентов&nbsp;&mdash; крупнейший реализованный проект.</p>
-        </div>
-
-        <div class="exp-card">
-          <h3>AI/ML-платформы</h3>
-          <p>Интеграция LLM в production-системы: LangChain, Claude, OpenAI, векторный поиск через Pinecone. Разработка MCP-серверов для AI-агентов. RAG-пайплайны для обработки документов. Гибридный текстовый и семантический поиск.</p>
-        </div>
-
-        <div class="exp-card">
-          <h3>Криптография и безопасность</h3>
-          <p>Системы на базе российской (ГОСТ&nbsp;Р&nbsp;34.10) и международной криптографии (RSA, AES, Ed25519). Custody-системы для управления ключами, двухфакторная аутентификация, биометрическая аутентификация с blockchain-верификацией (тема IEEE-публикации 2025).</p>
-        </div>
-
-        <div class="exp-card">
-          <h3>Разработка фреймворков и экосистем</h3>
-          <p>Создание переиспользуемых библиотек. Экосистема ts-core (30+ npm-пакетов)&nbsp;&mdash; инфраструктурная основа для десятка проектов: backend, frontend, криптография, WebSocket, OAuth, i18n. Фреймворк hlf-core&nbsp;&mdash; ORM для блокчейна с управлением токенами и сущностями.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section class="section" id="experience">
-    <div class="container">
-      <h2 class="section__title">Опыт работы</h2>
-
-      <div class="experience__text">
-        <p>Профессиональный путь в разработке начался в 2005 году. Первый значимый опыт&nbsp;&mdash; работа в <strong>CommuniGate Systems</strong>, где в роли старшего и ведущего программиста участвовал в создании клиентской части PRONTO для коммуникационной платформы CommuniGate Pro, объединяющей электронную почту, VoIP и мгновенные сообщения.</p>
-
-        <p>В 2010 году основал <strong>Vichatter</strong>&nbsp;&mdash; социальную сеть для видеообщения, которая стала одним из крупнейших видеочатов рунета. Платформа привлекла более 3&nbsp;миллионов пользователей и обслуживала до 500&nbsp;тысяч визитов в день. В рамках проекта была сформирована команда разработчиков и дизайнеров, реализована архитектура с высокой нагрузкой, интегрирован машинный перевод и выстроена система модерации совместно с Лигой безопасного интернета.</p>
-
-        <p>С 2018 года работал в структурах <strong>Норильского Никеля</strong>, где руководил командой разработки сервиса кастодиального обслуживания Symbridge. Проектировал микросервисную архитектуру, разрабатывал платёжные процессы и систему управления цифровыми активами на децентрализованной бирже.</p>
-
-        <p>С 2022 года&nbsp;&mdash; руководитель команды и fullstack-разработчик в научном центре &laquo;Идея&raquo; и лаборатории блокчейн <a href="https://chainlab.ru" target="_blank" rel="noopener">ChainLab</a></strong> , базовой организации <a href="https://blockchain.mipt.ru" target="_blank" rel="noopener">магистерской программы МФТИ по блокчейну</a>. Реализованы проекты Karma (Hyperledger Labs, IEEE), AI-платформа Gnosis, система биометрической аутентификации Cvartel (IEEE ICDCSW 2025).</p>
-
-        <p>С 2025 года совместно с партнёрами ведётся работа над <strong><a href="https://dfawl.ru" target="_blank" rel="noopener">DFAWL</a></strong>&nbsp;&mdash; White Label конструктором для создания платформ цифровых финансовых активов (ЦФА) и утилитарных цифровых прав (УЦП). Продукт позволяет разворачивать собственные платформы для торговли ЦФА в рамках российского законодательства. Проект охватывает полный жизненный цикл цифровых активов: выпуск, обращение, внебиржевая торговля, краудсейлы и погашение. Платформа включает более 12 компонентов: backend, frontend, блокчейн chaincode, систему аутентификации на Keycloak, блокчейн-эксплорер, AI-модуль, кастодиальный сервис, RESTful API и другие. Реализованы мультитенантная изоляция данных, ресурсная авторизация, WebSocket-синхронизация в реальном времени, интеграция с AI через протокол MCP и торговые роботы.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="section section--alt" id="projects">
-    <div class="container">
-      <h2 class="section__title">Реализованные проекты</h2>
-
-      <div class="projects__list">
-
-        <article class="project">
-          <div class="project__marker"></div>
-          <div class="project__body">
-            <div class="project__head">
-              <h3><a href="https://dfawl.ru" target="_blank" rel="noopener">DFAWL</a>&nbsp;&mdash; White Label конструктор платформ ЦФА / УЦП</h3>
-              <span class="project__scale">12+ компонентов</span>
+            <div class="card">
+              <div class="card__accent"></div>
+              <div class="card__body">
+                <div class="card__top">
+                  <span class="card__year">2010</span>
+                  <span class="card__degree">Магистр</span>
+                </div>
+                <h4>
+                  МФТИ &middot;
+                  <a
+                    href="https://ru.wikipedia.org/wiki/Московский_физико-технический_институт#факультет_физической_и_квантовой_электроники_(ФФКЭ)"
+                    target="_blank"
+                    rel="noopener"
+                    >Физика и прикладная математика</a
+                  >
+                </h4>
+                <p class="card__sub card__sub--divider">
+                  Московский физико-технический институт
+                </p>
+                <p class="card__sub">
+                  Факультет физической и квантовой электроники, кафедра
+                  высокопроизводительных вычислительных систем
+                </p>
+                <p class="card__thesis">
+                  <span class="card__thesis-label">Дипломная работа:</span>
+                  Системы команд масштабируемых векторных процессоров
+                </p>
+                <p class="card__thesis">
+                  <span class="card__thesis-label">Преподавание:</span> Лекции
+                  по устройству смарт-контрактов Ethereum в рамках
+                  <a
+                    href="https://blockchain.mipt.ru"
+                    target="_blank"
+                    rel="noopener"
+                    >магистерской программы МФТИ по технологиям блокчейна</a
+                  >
+                </p>
+              </div>
             </div>
-            <p>Конструктор для быстрого развёртывания платформ торговли цифровыми финансовыми активами и утилитарными цифровыми правами в рамках российского законодательства. Двойное хранение состояния&nbsp;&mdash; PostgreSQL для оперативных запросов и Hyperledger Fabric для неизменяемого аудита. Мультитенантная архитектура, ресурсная авторизация, блокчейн-эксплорер, AI-модуль, кастодиальный сервис, RESTful API, торговые роботы.</p>
-          </div>
-        </article>
 
-        <article class="project">
-          <div class="project__marker"></div>
-          <div class="project__body">
-            <div class="project__head">
-              <h3><a href="https://karma.chainlab.ru" target="_blank" rel="noopener">Karma</a>&nbsp;&mdash; благотворительная blockchain-платформа</h3>
-              <span class="project__scale">Hyperledger Labs, IEEE ICBC 2021</span>
+            <div class="card">
+              <div class="card__accent"></div>
+              <div class="card__body">
+                <div class="card__top">
+                  <span class="card__year">2012</span>
+                  <span class="card__degree">Магистр</span>
+                </div>
+                <h4>
+                  РАНХиГС &middot;
+                  <a
+                    href="https://mbacio.ru/msc-it"
+                    target="_blank"
+                    rel="noopener"
+                    >Информационный менеджмент</a
+                  >
+                </h4>
+                <p class="card__sub card__sub--divider">
+                  Российская академия народного хозяйства и государственной
+                  службы при Президенте РФ
+                </p>
+                <p class="card__sub">
+                  <a href="https://mbacio.ru" target="_blank" rel="noopener"
+                    >Школа IT-менеджмента</a
+                  >, подготовка руководителей в сфере IT
+                </p>
+                <p class="card__thesis">
+                  <span class="card__thesis-label">Выпускная работа:</span>
+                  Социальная сеть для видеообщения Vichatter&nbsp;&mdash;
+                  реализованный продукт с аудиторией более 3&nbsp;млн
+                  пользователей, до 500&nbsp;тыс. посещений в день
+                </p>
+              </div>
             </div>
-            <p>Первая в России блокчейн-платформа для пожертвований на базе Hyperledger Fabric. Запущена в 2023 году, на платформе работают фонды &laquo;Со-единение&raquo;, &laquo;Найди семью&raquo;, &laquo;Большая перемена&raquo;, &laquo;Синдром любви&raquo;, &laquo;Арифметика добра&raquo;. Доноры отслеживают движение средств в реальном времени через распределённый реестр, комиссия платформы&nbsp;&mdash; 0%. Разработана в лаборатории <a href="https://chainlab.ru" target="_blank" rel="noopener">ChainLab</a>. Принята в Hyperledger Labs (Linux Foundation). Представлена на Global Hyperledger Forum 2022 и IEEE COINS 2022, опубликована в IEEE ICBC 2021 в соавторстве с IBM.</p>
           </div>
-        </article>
 
-        <article class="project">
-          <div class="project__marker"></div>
-          <div class="project__body">
-            <div class="project__head">
-              <h3><a href="https://landing.gnosisai.ru" target="_blank" rel="noopener">Gnosis</a>&nbsp;&mdash; масштабируемая AI-платформа</h3>
+          <div>
+            <h3 class="label">Международные публикации</h3>
+
+            <div class="card">
+              <div class="card__accent card__accent--pub"></div>
+              <div class="card__body">
+                <div class="card__top">
+                  <span class="card__venue">IEEE ICDCSW 2025</span>
+                  <span class="card__location">Глазго, Великобритания</span>
+                </div>
+                <h4>
+                  Integrating Cvartel with Hyperledger Fabric for Enhanced
+                  Biometric Authentication
+                </h4>
+                <p class="card__sub card__sub--divider">
+                  45th IEEE International Conference on Distributed Computing
+                  Systems Workshops
+                </p>
+                <p class="card__sub">
+                  Исследование интеграции биометрической аутентификации с
+                  блокчейн-платформой Hyperledger Fabric. Работа описывает
+                  архитектуру системы Cvartel, обеспечивающей верификацию
+                  личности через биометрические данные с записью результатов в
+                  распределённый реестр.
+                </p>
+                <p class="card__thesis">
+                  <span class="card__thesis-label">DOI:</span>
+                  <span style="font-family: var(--mono); font-style: normal"
+                    >10.1109/ICDCSW63273.2025.00064</span
+                  >
+                </p>
+                <a
+                  href="https://ieeexplore.ieee.org/document/11262628"
+                  class="card__link"
+                  target="_blank"
+                  rel="noopener"
+                  >IEEE Xplore &rarr;</a
+                >
+              </div>
             </div>
-            <p>Интеллектуальная платформа нового поколения с мультипровайдерным переключением языковых моделей. Реализует RAG-пайплайн для работы с различными документами, а также генерацию изображений, синтез речи и распознавание голоса и создание видео-аватаров. Платформа включает встроенную монетизацию и OAuth-аутентификацию, поддерживающую целый ряд провайдеров.</p>
-          </div>
-        </article>
 
-        <article class="project">
-          <div class="project__marker"></div>
-          <div class="project__body">
-            <div class="project__head">
-              <h3>Cvartel&nbsp;&mdash; биометрическая аутентификация</h3>
-              <span class="project__scale">IEEE ICDCSW 2025</span>
+            <div class="card">
+              <div class="card__accent card__accent--pub"></div>
+              <div class="card__body">
+                <div class="card__top">
+                  <span class="card__venue">IEEE ICBC 2021</span>
+                  <span class="card__location">Сидней, Австралия</span>
+                </div>
+                <h4>Karma Blockchain Based Charity Foundation Platform</h4>
+                <p class="card__sub card__sub--divider">
+                  IEEE International Conference on Blockchain and Cryptocurrency
+                </p>
+                <p class="card__sub">
+                  Работа предлагает подход к повышению прозрачности
+                  благотворительных фондов через permissioned-блокчейн. Проект
+                  принят в Hyperledger Labs (Linux Foundation),
+                  спонсор&nbsp;&mdash; член Hyperledger Technical Steering
+                  Committee (IBM).
+                </p>
+                <p class="card__thesis">
+                  <span class="card__thesis-label">DOI:</span>
+                  <span style="font-family: var(--mono); font-style: normal"
+                    >10.1109/ICBC51069.2021.9461072</span
+                  >
+                </p>
+                <div class="card__links">
+                  <a
+                    href="https://ieeexplore.ieee.org/document/9461072/"
+                    target="_blank"
+                    rel="noopener"
+                    >IEEE Xplore</a
+                  >
+                  <a
+                    href="https://research.ibm.com/publications/karma-blockchain-based-charity-foundation-platform"
+                    target="_blank"
+                    rel="noopener"
+                    >IBM Research</a
+                  >
+                  <a
+                    href="https://www.researchgate.net/publication/352724815"
+                    target="_blank"
+                    rel="noopener"
+                    >ResearchGate</a
+                  >
+                </div>
+              </div>
             </div>
-            <p>Система биометрической аутентификации с верификацией через Hyperledger Fabric. Совместная работа лаборатории <a href="https://chainlab.ru" target="_blank" rel="noopener">ChainLab</a> и МФТИ. Результаты представлены на 45th IEEE International Conference on Distributed Computing Systems Workshops 2025 в Глазго.</p>
           </div>
-        </article>
-
-        <article class="project">
-          <div class="project__marker"></div>
-          <div class="project__body">
-            <div class="project__head">
-              <h3>DAO (включая Custody, HLF Explorer и Solidity-контракты)</h3>
-            </div>
-            <p>Платформа децентрализованных автономных организаций с токен-голосованием и Ethereum-мостом. Custody-система для управления криптографическими ключами. Обозреватель блокчейна Hyperledger Fabric. Коллекция смарт-контрактов: Security Tokens (Polymath), ERC-20, ERC-721, DEX.</p>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project__marker"></div>
-          <div class="project__body">
-            <div class="project__head">
-              <h3><a href="https://www.npmjs.com/settings/ts-core/packages" target="_blank" rel="noopener">@ts-core</a>&nbsp;&mdash; экосистема TypeScript-библиотек</h3>
-              <span class="project__scale">30+ npm-пакетов</span>
-            </div>
-            <p>Инфраструктурная основа для всех enterprise-проектов: backend и frontend утилиты, криптография (ГОСТ, RSA, MetaMask), WebSocket клиент/сервер, OAuth/OpenID, двухфакторная аутентификация, интернационализация, Swagger-генерация.</p>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project__marker"></div>
-          <div class="project__body">
-            <div class="project__head">
-              <h3><a href="https://www.npmjs.com/settings/hlf-core/packages" target="_blank" rel="noopener">@hlf-core</a>&nbsp;&mdash; фреймворк для Hyperledger Fabric</h3>
-              <span class="project__scale">10 модулей, 5 npm-пакетов</span>
-            </div>
-            <p>ORM-подобная абстракция над блокчейном: EntityManager для CRUD-операций, каскадные связи между сущностями, пагинация, строковая арифметика для точных финансовых расчётов. Система управления токенами с эмиссией, переводами, hold-механизмом и полным аудитом.</p>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project__marker"></div>
-          <div class="project__body">
-            <div class="project__head">
-              <h3>Vichatter&nbsp;&mdash; социальная сеть для видеообщения</h3>
-              <span class="project__scale">>3 млн пользователей, до 500K визитов/день</span>
-            </div>
-            <p>Международная видео-социальная сеть с live-стримингом, встроенным переводчиком сообщений, системой виртуальных подарков и рейтингов, кастомным 3D-движком. Мобильные и десктопные приложения. Партнёрство с PROMT и Лигой безопасного интернета.</p>
-          </div>
-        </article>
-
-        <p class="projects__more">и другие...</p>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Open Source -->
-  <section class="section" id="opensource">
-    <div class="container">
-      <h2 class="section__title">Open source</h2>
-
-      <div class="os-grid">
-        <div class="os-item">
-          <p class="os-item__key">GitHub</p>
-          <p class="os-item__val">70 публичных репозиториев</p>
-          <p class="os-item__note"><a href="https://github.com/ManhattanDoctor" target="_blank" rel="noopener">@ManhattanDoctor</a> &middot; Pro &middot; Arctic Code Vault Contributor</p>
-        </div>
-        <div class="os-item">
-          <p class="os-item__key">npm</p>
-          <p class="os-item__val">30+ пакетов</p>
-          <p class="os-item__note"><a href="https://www.npmjs.com/~renatg" target="_blank" rel="noopener">@ts-core/*</a>, @hlf-core/*</p>
-        </div>
-        <div class="os-item">
-          <p class="os-item__key">Hyperledger Labs</p>
-          <p class="os-item__val">karma-charity-platform</p>
-          <p class="os-item__note">Initial Committer &middot; Linux Foundation &middot; <a href="https://chainlab.ru" target="_blank" rel="noopener">ChainLab</a></p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section class="section section--alt" id="contact">
-    <div class="container">
-      <h2 class="section__title">Контакты</h2>
-      <ul class="contacts">
-        <li><a href="mailto:renat.gubaev@gmail.com">renat.gubaev@gmail.com</a></li>
-        <li><a href="https://github.com/ManhattanDoctor" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://ru.linkedin.com/in/renat-gubaev-a50349154" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://career.habr.com/renat-gubaev" target="_blank" rel="noopener">Habr Career</a></li>
-        <li><a href="https://www.npmjs.com/~renatg" target="_blank" rel="noopener">npm</a></li>
-      </ul>
-    </div>
-  </section>
+    <!-- Expertise -->
+    <section class="section section--alt" id="expertise">
+      <div class="container">
+        <h2 class="section__title">Области экспертизы</h2>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Ренат Губаев</p>
-    </div>
-  </footer>
+        <div class="expertise__grid">
+          <div class="exp-card">
+            <svg
+              class="exp-card__icon"
+              viewBox="0 0 24 24"
+              width="22"
+              height="22"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="7" width="20" height="14" rx="2" />
+              <path d="M16 7V5a4 4 0 00-8 0v2" />
+              <circle cx="12" cy="15" r="1" />
+            </svg>
+            <h3>Blockchain-архитектура</h3>
+            <p>
+              Проектирование систем на Hyperledger Fabric и Ethereum:
+              смарт-контракты, токеномика, кросс-чейн взаимодействие. Автор
+              ORM-фреймворка для chaincode и библиотеки управления токенами.
+              Опыт с Polymath Security Tokens (ST-20), ERC-20/ERC-721,
+              DeFi-механиками.
+            </p>
+          </div>
 
-  <script src="script.js"></script>
-</body>
+          <div class="exp-card">
+            <svg
+              class="exp-card__icon"
+              viewBox="0 0 24 24"
+              width="22"
+              height="22"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+            <h3>Enterprise-платформы</h3>
+            <p>
+              Полный цикл разработки сложных бизнес-систем. Мультитенантность,
+              ресурсная авторизация через Keycloak, двойное хранение состояния
+              (SQL&nbsp;+&nbsp;blockchain), Command/Event архитектура, WebSocket
+              real-time.
+            </p>
+          </div>
+
+          <div class="exp-card">
+            <svg
+              class="exp-card__icon"
+              viewBox="0 0 24 24"
+              width="22"
+              height="22"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 2v4m0 12v4m-7.07-15.07l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"
+              />
+            </svg>
+            <h3>AI/ML-платформы</h3>
+            <p>
+              Интеграция LLM в production-системы: LangChain, Claude, OpenAI,
+              векторный поиск в базах данных. Разработка MCP-серверов для
+              AI-агентов. RAG-пайплайны для обработки документов. Гибридный
+              текстовый и семантический поиск.
+            </p>
+          </div>
+
+          <div class="exp-card">
+            <svg
+              class="exp-card__icon"
+              viewBox="0 0 24 24"
+              width="22"
+              height="22"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            <h3>Криптография и безопасность</h3>
+            <p>
+              Системы на базе российской (ГОСТ&nbsp;Р&nbsp;34.10) и
+              международной криптографии (RSA, AES, Ed25519). Custody-системы
+              для управления ключами, двухфакторная аутентификация,
+              биометрическая аутентификация с blockchain-верификацией.
+            </p>
+          </div>
+
+          <div class="exp-card">
+            <svg
+              class="exp-card__icon"
+              viewBox="0 0 24 24"
+              width="22"
+              height="22"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4 4h16v16H4z" />
+              <path d="M4 9h16" />
+              <path d="M9 4v16" />
+            </svg>
+            <h3>Разработка фреймворков и экосистем</h3>
+            <p>
+              Создание переиспользуемых библиотек и экосистемы (30+
+              npm-пакетов)&nbsp;&mdash; инфраструктурная основа для десятка
+              проектов: backend, frontend, криптография, WebSocket, OAuth, i18n.
+              Фреймворк ORM для блокчейна с управлением токенами и сущностями.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section__title">Опыт работы</h2>
+
+        <div class="experience__text">
+          <p>
+            Профессиональный путь в разработке начался в 2005 году. Первый
+            значимый опыт&nbsp;&mdash; работа в
+            <strong>CommuniGate Systems</strong>, где в роли старшего и ведущего
+            программиста участвовал в создании клиентской части PRONTO для
+            коммуникационной платформы CommuniGate Pro, объединяющей электронную
+            почту, VoIP и мгновенные сообщения.
+          </p>
+
+          <p>
+            В 2010 году основал <strong>Vichatter</strong>&nbsp;&mdash;
+            социальную сеть для видеообщения, которая стала одним из крупнейших
+            видеочатов рунета. Платформа привлекла более 3&nbsp;миллионов
+            пользователей и обслуживала до 500&nbsp;тысяч визитов в день. В
+            рамках проекта была сформирована команда разработчиков и дизайнеров,
+            реализована архитектура с высокой нагрузкой, интегрирован машинный
+            перевод и выстроена система модерации совместно с Лигой безопасного
+            интернета.
+          </p>
+
+          <p>
+            С 2018 года работал в структурах
+            <strong>Норильского Никеля</strong>, где руководил командой
+            разработки сервиса кастодиального обслуживания Symbridge.
+            Проектировал микросервисную архитектуру, разрабатывал платёжные
+            процессы и систему управления цифровыми активами на
+            децентрализованной бирже.
+          </p>
+
+          <p>
+            С 2022 года&nbsp;&mdash; руководитель команды и
+            fullstack-разработчик в
+            <strong
+              >Лаборатории блокчейн
+              <a href="https://chainlab.ru" target="_blank" rel="noopener"
+                >ChainLab</a
+              ></strong
+            >
+            (Научный центр &laquo;Идея&raquo;), базовой организации
+            <a href="https://blockchain.mipt.ru" target="_blank" rel="noopener"
+              >магистерской программы МФТИ по блокчейну</a
+            >. Реализованы проекты Karma (Hyperledger Labs, IEEE), AI-платформа
+            Gnosis, система биометрической аутентификации Cvartel (IEEE ICDCSW
+            2025).
+          </p>
+
+          <p>
+            С 2025 года совместно с партнёрами ведётся работа над
+            <a href="https://dfawl.ru" target="_blank" rel="noopener"><strong>DFAWL</strong></a>&nbsp;&mdash;
+            White Label конструктором платформ для торговли цифровыми финансовыми
+            активами (ЦФА) и утилитарными цифровыми правами (УЦП). Продукт
+            позволяет разворачивать готовые платформы в рамках российского
+            законодательства, охватывая полный жизненный цикл цифровых активов:
+            выпуск, обращение, внебиржевая торговля, краудсейлы и погашение.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <h2 class="section__title">Реализованные проекты</h2>
+
+        <div class="projects__list">
+          <article class="project">
+            <div class="project__marker"></div>
+            <div class="project__body">
+              <div class="project__head">
+                <h3>
+                  <a href="https://dfawl.ru" target="_blank" rel="noopener"
+                    >DFAWL</a
+                  >&nbsp;&mdash; White Label конструктор платформ ЦФА / УЦП
+                </h3>
+                <span class="project__scale">12+ компонентов</span>
+              </div>
+              <p>
+                Конструктор для быстрого развёртывания платформ торговли
+                цифровыми финансовыми активами и утилитарными цифровыми правами
+                в рамках российского законодательства. Двойное хранение
+                состояния&nbsp;&mdash; PostgreSQL для оперативных запросов и
+                Hyperledger Fabric для неизменяемого аудита. Мультитенантная
+                архитектура, ресурсная авторизация, блокчейн-эксплорер,
+                AI-модуль, кастодиальный сервис, RESTful API, торговые роботы.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__marker"></div>
+            <div class="project__body">
+              <div class="project__head">
+                <h3>
+                  <a
+                    href="https://karma.chainlab.ru"
+                    target="_blank"
+                    rel="noopener"
+                    >Karma</a
+                  >&nbsp;&mdash; благотворительная blockchain-платформа
+                </h3>
+                <span class="project__scale"
+                  >Hyperledger Labs &middot; IEEE ICBC 2021</span
+                >
+              </div>
+              <p>
+                Первая в России блокчейн-платформа для пожертвований на базе
+                Hyperledger Fabric. Запущена в 2023 году, на платформе работают
+                фонды &laquo;Со-единение&raquo;, &laquo;Найди семью&raquo;,
+                &laquo;Большая перемена&raquo;, &laquo;Синдром любви&raquo;,
+                &laquo;Арифметика добра&raquo;. Доноры отслеживают движение
+                средств в реальном времени, комиссия платформы&nbsp;&mdash; 0%.
+                Принята в Hyperledger Labs (Linux Foundation), представлена на
+                Global Hyperledger Forum 2022, опубликована в IEEE в соавторстве
+                с IBM.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__marker"></div>
+            <div class="project__body">
+              <div class="project__head">
+                <h3>
+                  <a
+                    href="https://landing.gnosisai.ru"
+                    target="_blank"
+                    rel="noopener"
+                    >Gnosis</a
+                  >&nbsp;&mdash; масштабируемая AI-платформа
+                </h3>
+              </div>
+              <p>
+                AI-платформа с мультипровайдерным переключением языковых
+                моделей. Реализует RAG-пайплайн для работы с различными
+                документами, генерацию изображений, синтез речи, распознавание
+                голоса и создание видео-аватаров. Встроенная монетизация и
+                OAuth-аутентификация (Google, Yandex, VK, Telegram).
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__marker"></div>
+            <div class="project__body">
+              <div class="project__head">
+                <h3>Cvartel&nbsp;&mdash; биометрическая аутентификация</h3>
+                <span class="project__scale">IEEE ICDCSW 2025</span>
+              </div>
+              <p>
+                Система биометрической аутентификации с верификацией через
+                Hyperledger Fabric. Совместная работа лаборатории
+                <a href="https://chainlab.ru" target="_blank" rel="noopener"
+                  >ChainLab</a
+                >
+                и МФТИ. Результаты представлены на 45th IEEE International
+                Conference on Distributed Computing Systems Workshops 2025 в
+                Глазго.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__marker"></div>
+            <div class="project__body">
+              <div class="project__head">
+                <h3>
+                  DAO (включая Custody, HLF Explorer и Solidity-контракты)
+                </h3>
+              </div>
+              <p>
+                Платформа децентрализованных автономных организаций с
+                токен-голосованием и Ethereum-мостом. Custody-система для
+                управления криптографическими ключами. Обозреватель блокчейна
+                Hyperledger Fabric. Коллекция смарт-контрактов: Security Tokens
+                (Polymath), ERC-20, ERC-721, DEX.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__marker"></div>
+            <div class="project__body">
+              <div class="project__head">
+                <h3>
+                  <a
+                    href="https://www.npmjs.com/settings/ts-core/packages"
+                    target="_blank"
+                    rel="noopener"
+                    >@ts-core</a
+                  >&nbsp;&mdash; экосистема TypeScript-библиотек
+                </h3>
+                <span class="project__scale">30+ npm-пакетов</span>
+              </div>
+              <p>
+                Инфраструктурная основа для всех enterprise-проектов: backend и
+                frontend утилиты, криптография (ГОСТ, RSA, MetaMask), WebSocket
+                клиент/сервер, OAuth/OpenID, двухфакторная аутентификация,
+                интернационализация, Swagger-генерация.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__marker"></div>
+            <div class="project__body">
+              <div class="project__head">
+                <h3>
+                  <a
+                    href="https://www.npmjs.com/settings/hlf-core/packages"
+                    target="_blank"
+                    rel="noopener"
+                    >@hlf-core</a
+                  >&nbsp;&mdash; фреймворк для Hyperledger Fabric
+                </h3>
+                <span class="project__scale">10 модулей, 5 npm-пакетов</span>
+              </div>
+              <p>
+                ORM-подобная абстракция над блокчейном: EntityManager для
+                CRUD-операций, каскадные связи между сущностями, пагинация,
+                строковая арифметика для точных финансовых расчётов. Система
+                управления токенами с эмиссией, переводами, hold-механизмом и
+                полным аудитом.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__marker"></div>
+            <div class="project__body">
+              <div class="project__head">
+                <h3>Vichatter&nbsp;&mdash; социальная сеть для видеообщения</h3>
+                <span class="project__scale"
+                  >>3 млн пользователей, до 500K визитов/день</span
+                >
+              </div>
+              <p>
+                Международная видео-социальная сеть с live-стримингом,
+                встроенным переводчиком сообщений, системой виртуальных подарков
+                и рейтингов, кастомным движком. Мобильные и десктопные
+                приложения. Партнёрство с PROMT и Лигой безопасного интернета.
+              </p>
+            </div>
+          </article>
+
+          <p class="projects__more">и другие проекты</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section__title">Контакты</h2>
+        <ul class="contacts">
+          <li>
+            <a href="mailto:renat.gubaev@gmail.com">renat.gubaev@gmail.com</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/ManhattanDoctor"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ru.linkedin.com/in/renat-gubaev-a50349154"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__oss">
+          <a href="https://github.com/ManhattanDoctor" target="_blank" rel="noopener">70+ github-репозиториев</a>
+          <a href="https://www.npmjs.com/~renatg" target="_blank" rel="noopener">30+ npm-пакетов</a>
+          <a href="https://github.com/hyperledger-labs/karma-charity-platform" target="_blank" rel="noopener">Hyperledger Labs Contributor</a>
+          <a href="https://github.com/ManhattanDoctor?achievement=arctic-code-vault-contributor&tab=achievements" target="_blank" rel="noopener">Arctic Code Vault</a>
+        </div>
+        <p class="footer__copy">&copy; <script>document.write(new Date().getFullYear())</script> Ренат Губаев</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
