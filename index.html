@@ -106,16 +106,23 @@
       <div class="header__bg"></div>
       <div class="container">
         <div class="header__content fade-in">
-          <img
-            src="photo-200.png"
-            srcset="photo-200.png 200w, photo-400.png 400w"
-            sizes="160px"
-            alt="Ренат Губаев"
-            class="header__photo"
-            width="160"
-            height="160"
-            loading="eager"
-          />
+          <picture>
+            <source
+              srcset="photo-200.webp 200w, photo-400.webp 400w"
+              sizes="160px"
+              type="image/webp"
+            />
+            <img
+              src="photo-200.png"
+              srcset="photo-200.png 200w, photo-400.png 400w"
+              sizes="160px"
+              alt="Ренат Губаев"
+              class="header__photo"
+              width="160"
+              height="160"
+              loading="eager"
+            />
+          </picture>
           <h1>Ренат Губаев</h1>
           <p class="header__role">
             20+ лет в разработке: от коммуникационных платформ до blockchain и
