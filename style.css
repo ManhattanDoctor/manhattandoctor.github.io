@@ -165,8 +165,8 @@ a:hover { text-decoration-color: var(--link); }
 }
 
 .header__photo {
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--border);
@@ -180,8 +180,8 @@ a:hover { text-decoration-color: var(--link); }
     text-align: center;
   }
   .header__photo {
-    width: 140px;
-    height: 140px;
+    width: 220px;
+    height: 220px;
   }
 }
 
